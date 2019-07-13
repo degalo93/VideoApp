@@ -1,3 +1,15 @@
-export default (state = {}, action) => {
 
+const INITAL_STATE = {
+ isSignedIn:null
+};
+
+export default (state = INITAL_STATE, action) => {
+    switch (action.type) {
+        case 'SIGN_IN':
+            return { ...state , issignedIn: true };
+        case 'SIGN_OUT':
+            return {...state, isSignedIn: false};
+        default:
+            return state;
+    }
 };
