@@ -2,8 +2,28 @@ import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 
 class StreamCreate extends React.Component {
-    render () {
-        return <div> StreamCreate </div>;
+    renderInput({input, label}) {
+        return (
+        <div className="field">
+        <label>{label}</label>
+        <input {...input}/>
+        </div>
+        );
+    }
+
+    onSubmit(formVaule) {
+       console.log (formVaule);
+    }
+
+    render () { 
+        
+        return (
+            <form onSubmit={this.props.handleSubmit(this.onSubmit)} className="ui form"> 
+                <Field name="title" component={this.renderInput} label="Enter Title"/>
+                <Field name="description" component= {this.renderInput} label="Enter Discription" />
+                <button className="ui button primary">Submit</button>
+            </form>
+        )
     }   
 }
-export default StreamCreate;
+export default reduxForm ({ form : 'streamCreate' }) (StreamCreate);
