@@ -1,3 +1,3 @@
-##VIDEO APP 
+VIDEO APP 
 
-#### This is a video sharing app made with react and react-redux. 
+### This is a video sharing app made with react and react-redux. 
