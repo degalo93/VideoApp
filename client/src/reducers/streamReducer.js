@@ -1,3 +1,4 @@
+import _ from "lodash";
 import {  
     CREATE_STREAM,
     FETCH_STREAMS,
@@ -5,6 +6,8 @@ import {
     DELETE_STREAM,
     EDIT_STREAM
  } from '../action/types';
+
+//note on delete since payload is already the id no need refrence id  
 
  export default (state = {}, action) => {
      switch (action.type) {
@@ -14,6 +17,8 @@ import {
             return {...state, [action.payload.id]: action.payload};
         case EDIT_STREAM:
             return {...state, [action.payload.id]: action.payload};
+        case DELETE_STREAM:
+            return _.omit(state, action.payload);
          default:
              return state;
      }
