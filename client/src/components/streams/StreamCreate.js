@@ -24,10 +24,10 @@ class StreamCreate extends React.Component {
         {this.renderError(meta)}
         </div>
         );
-    }
+    };
 
-    onSubmit(formVaules) {
-       console.log (formVaules);
+    onSubmit = (formVaules) => {
+       this.props.createStream(formVaules)
     }
 
     render () { 
@@ -49,9 +49,10 @@ const validate = formValues => {
     if (!formValues.description){
         errors.description = 'You must enter a description';
     }
+
     return errors;
 };
 
 const formWrapped  = reduxForm ({ form : 'streamCreate', validate }) (StreamCreate);
 
-export default connect ()(formWrapped);
+export default connect (null, {createStream})(formWrapped);
