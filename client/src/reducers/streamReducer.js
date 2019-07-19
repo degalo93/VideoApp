@@ -5,7 +5,7 @@ import {
     FETCH_STREAM,
     DELETE_STREAM,
     EDIT_STREAM
- } from '../action/types';
+ } from '../actions/types';
 
 //note on delete since payload is already the id no need refrence id  
 
