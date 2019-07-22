@@ -4,6 +4,37 @@
       "title": "My movie ",
       "description": "New movie",
       "id": 1
+    },
+    {
+      "title": "Even newer stream",
+      "description": "For practice and because I am cool like that.",
+      "userId": null,
+      "id": 2
+    },
+    {
+      "title": "Even newer stream",
+      "description": "For practice and because I am cool like that.",
+      "id": 3
+    },
+    {
+      "title": "weird way to make streams",
+      "description": "Interesting wow this is odd",
+      "id": 4
+    },
+    {
+      "title": "Programmatic Nav",
+      "description": "This should not show up on ",
+      "id": 5
+    },
+    {
+      "title": "Magic",
+      "description": "New",
+      "id": 6
+    },
+    {
+      "title": "testing ",
+      "description": "testing",
+      "id": 7
     }
   ]
 }
