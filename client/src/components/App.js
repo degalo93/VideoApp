@@ -6,13 +6,14 @@ import StreamEdit from './streams/StreamEdit';
 import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
 import Navbar from './Navbar';
+import history from '../history';
 
 
 
 const App = () => {
     return (
         <div>
-            <BrowserRouter>
+            <BrowserRouter history={history}>
                 <div>
                 <Navbar />
                 <Route path="/" exact component = {StreamList} />

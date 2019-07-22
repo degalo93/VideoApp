@@ -30,6 +30,8 @@ const { userId } = getState().auth;
 
    dispatch ({ type: CREATE_STREAM, payload: response.data  });
 
+   //programatic navigation
+
 };
 
 export const fetchStreams = () => async dispatch => {
