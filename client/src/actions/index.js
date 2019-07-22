@@ -1,4 +1,5 @@
 import streams from '../apis/streams';
+import history from '../history';
 import { SIGN_IN, 
     SIGN_OUT, 
     CREATE_STREAM,
@@ -31,6 +32,8 @@ const { userId } = getState().auth;
    dispatch ({ type: CREATE_STREAM, payload: response.data  });
 
    //programatic navigation
+   history.push('/');
+
 
 };
 
