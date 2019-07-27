@@ -38,7 +38,7 @@ class StreamList extends React.Component {
                
                 </div>
             )
-        })
+        });
 
 
     }

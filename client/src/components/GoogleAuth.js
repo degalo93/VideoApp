@@ -4,7 +4,6 @@ import { signIn, signOut} from '../actions';
 
 class GoogleAuth extends React.Component {
 
-   
 
     //callback to make sure google recived the request includes my cliend id
     componentDidMount(){
